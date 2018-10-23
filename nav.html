@@ -1,0 +1,37 @@
+<ul>
+	<li id="homepage" class="menu"><a href="index.html?menu=homepage">Homepage</a></li>
+	<li id="submit" class="menu"><a href="./submit.html?menu=submit">Submit</a></li>
+	<li id="attend" class="menu"><a href="./attend.html?menu=attend">Attend</a></li>
+	<li id="program" class="menu"><a href="./program.html?menu=program">Program</a></li>
+	<li id="organization" class="menu"><a href="./organization.html?menu=organization">Organization</a></li>
+	<li id="callsponsorhip" class="menu"><a href="./callsponsorship.html?menu=callsponsorship">Call for Sponsorship</a></li>
+	<li id="sponsors" class="menu"><a href="./sponsors.html?menu=sponsors">Sponsors</a></li>
+	<!--<li><a href="right-sidebar.html">Right Sidebar</a></li>
+	<li><a href="no-sidebar.html">No Sidebar</a></li>-->
+</ul>
+
+<script>
+// Add active class to the current menu (highlight it)
+	
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+
+function getUrlParam(parameter, defaultvalue){
+    var urlparameter = defaultvalue;
+    if(window.location.href.indexOf(parameter) > -1){
+        urlparameter = getUrlVars()[parameter];
+        }
+    return urlparameter;
+}
+
+	
+var page = getUrlParam('menu','homepage');
+//alert("page ouverte"+page);
+document.getElementById(page).className += " active";
+	
+</script>

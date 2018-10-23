@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<!--
+	Iridium by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>SIGIR 2019 (Paris, France)</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<!-- <script src="js/jquery-3.3.1.min.js"></script> --> <!-- avec 3.3.1 load ne fonctionne plus -->
+		<!-- <script src="js/script.js"></script> -->
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+	</head>
+	<body class="homepage">
+
+		<!-- Header -->
+		<div id="header">
+			<div class="container"> 
+				
+				<!-- Logo -->
+				<div id="logo" style="background: #172C54">
+						<img src="images/logo_transp_petit.png"> 
+					<!-- <h1><a href="#">SIGIR 2019</a></h1>
+					<span>21 - 25 July 2019 (Paris, France)</span> -->
+				</div>
+				
+				<!-- Nav -->
+				
+				<nav id="nav">
+					<ul>
+						<li id="homepage" class="menu"><a href="index.html?menu=homepage">Homepage</a></li>
+						<li id="submit" class="menu"><a href="./submit.html?menu=submit">Submit</a></li>
+						<li id="attend" class="menu"><a href="./attend.html?menu=attend">Attend</a></li>
+						<li id="program" class="menu"><a href="./program.html?menu=program">Program</a></li>
+						<li id="organization" class="menu"><a href="./organization.html?menu=organization">Organization</a></li>
+						<li id="callsponsorhip" class="menu"><a href="./callsponsorship.html?menu=callsponsorship">Call for Sponsorship</a></li>
+						<li id="sponsors" class="menu"><a href="./sponsors.html?menu=sponsors">Sponsors</a></li>
+						<!--<li><a href="right-sidebar.html">Right Sidebar</a></li>
+						<li><a href="no-sidebar.html">No Sidebar</a></li>-->
+					</ul>
+
+					<script>
+					// Add active class to the current menu (highlight it)
+
+					function getUrlVars() {
+						var vars = {};
+						var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+							vars[key] = value;
+						});
+						return vars;
+					}
+
+					function getUrlParam(parameter, defaultvalue){
+						var urlparameter = defaultvalue;
+						if(window.location.href.indexOf(parameter) > -1){
+							urlparameter = getUrlVars()[parameter];
+							}
+						return urlparameter;
+					}
+
+
+					var page = getUrlParam('menu','homepage');
+					//alert("page ouverte"+page);
+					document.getElementById(page).className += " active";
+
+					</script>
+				</nav>
+				
+				
+				
+				
+				<!-- <nav id="nav">
+				</nav>
+				<script>
+					$(function(){
+					  $("#nav").load("nav.html", function() {
+						  alert("load was performed");
+					  });
+					});
+				</script>-->
+			</div>
+		</div>
+
+		<!-- Main -->
+		<div id="main">
+			<div class="container">
+				<div class="row"> 
+					
+					<!-- Content -->
+					<div id="content" class="8u skel-cell-important">
+						<section>
+							<header>
+								<h2>Submit</h2>
+								<h3>Please come back later</h3> <p>this page is under construction</p>
+							</header>
+							<p>The annual SIGIR conference is the major international forum for the presentation of new research results, and the demonstration of new systems and techniques, in the broad field of information retrieval (IR)</p>
+						</section>
+					</div>
+					
+					<!-- Sidebar -->
+					<div id="sidebar" class="4u">
+						<section>
+							<img src="./images/amphiCiteSciences.jpg" style="width:125%"/>
+							<a href="https://twitter.com/sigir2019?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @sigir2019</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+							<!--<header>
+								<h2>Social Corner</h2>
+							</header>
+							<ul class="style">
+								<li>
+									<p class="posted">February, 2018 </p>
+									<!--<img src="images/pic04.jpg" alt="" />-->
+							<!--		<p class="text">The website is under construction... </p>
+								</li>
+							</ul>-->
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="8u">
+						<section>
+							<h2>Sponsors</h2>
+							<ul class="default">
+								<li>
+									<a href="http://www.acm.org/"><img src="images/logo-acm.jpg" height=100px/></a>
+									<a href="http://www.sigir.org"><img src="images/logo-sigir.jpg" width=100px/></a>
+									<a href="http://www.asso-aria.org"><img src="images/logoaria.gif" width=150/></a>
+								</li>
+							</ul>
+						</section>
+					</div>
+					<div class="2u">
+						<section>
+							<ul class="default">
+							</ul>
+						</section>
+					</div>
+					<div class="2u">
+						<section>
+							<ul class="default">
+							</ul>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Copyright -->
+		<div id="copyright">
+			<div class="container">
+				SIGIR 2019 - <a href="">The 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval - Paris (France)</a>
+			</div>
+		</div>
+		
+	</body>
+</html>
